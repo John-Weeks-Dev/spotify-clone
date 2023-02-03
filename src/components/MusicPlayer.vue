@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 import MusicPlayerVolume from '../components/MusicPlayerVolume.vue'
 import Heart from 'vue-material-design-icons/Heart.vue';
 import PictureInPictureBottomRight from 'vue-material-design-icons/PictureInPictureBottomRight.vue';
@@ -21,7 +21,7 @@ let seekerContainer = ref(null)
 let range = ref(0)
 
 onMounted(() => {
-    if (currentTrack.value) {
+    if (currentTrack.value) { 
         seeker.value.addEventListener("change", function () {
             const time = audio.value.duration * (seeker.value.value / 100);
             audio.value.currentTime = time;
@@ -123,8 +123,8 @@ watch(() => isTrackTimeCurrent.value, (time) => {
                 </div>
 
 
-                <div class="flex items-center">
-                <div v-if="isTrackTimeCurrent" class="text-white text-[12px] pr-2 pt-[11px]">{{ isTrackTimeCurrent }}</div>
+                <div class="flex items-center h-[25px]">
+                    <div v-if="isTrackTimeCurrent" class="text-white text-[12px] pr-2 pt-[11px]">{{ isTrackTimeCurrent }}</div>
                     <div
                         ref="seekerContainer"
                         class="w-full relative mt-2 mb-3"

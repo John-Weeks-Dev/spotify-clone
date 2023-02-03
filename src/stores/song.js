@@ -25,7 +25,7 @@ export const useSongStore = defineStore('song', {
         setTimeout(() => {
             this.isPlaying = true
             this.audio.play()
-        }, 100)
+        }, 200)
     },
 
     playOrPauseSong() {
@@ -60,6 +60,19 @@ export const useSongStore = defineStore('song', {
             let track = artist.tracks[currentTrack.id]
             this.loadSong(artist, track)
         }
+    },
+
+    playFromFirst() {
+        this.resetState()
+        let track = artist.tracks[0]
+        this.loadSong(artist, track)
+    },
+
+    resetState() {
+        this.isPlaying = false
+        this.audio = null
+        this.currentArtist = null
+        this.currentTrack = null
     }
   },
   persist: true

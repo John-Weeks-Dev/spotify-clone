@@ -28,7 +28,7 @@ onMounted(() => {
         const seconds = Math.floor(duration % 60);
         isTrackTime.value = minutes+':'+seconds.toString().padStart(2, '0')
     });
-    isPlaying.value = false
+    // isPlaying.value = false
 })
 </script>
 
