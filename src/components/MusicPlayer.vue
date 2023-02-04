@@ -43,10 +43,13 @@ onMounted(() => {
             audio.value.currentTime = time;
             seeker.value.value = (100 / audio.value.duration) * audio.value.currentTime;
         });
+    
+        timeupdate()
+        loadmetadata()
     }
 })
 
-watch(() => audio.value, () => {
+const timeupdate = () => {
     audio.value.addEventListener("timeupdate", function () {
         var minutes = Math.floor(audio.value.currentTime / 60);
         var seconds = Math.floor(audio.value.currentTime - minutes * 60);
@@ -55,13 +58,20 @@ watch(() => audio.value, () => {
         range.value = value
         seeker.value.value = value;
     });
+}
 
+const loadmetadata = () => {
     audio.value.addEventListener('loadedmetadata', function() {
         const duration = audio.value.duration;
         const minutes = Math.floor(duration / 60);
         const seconds = Math.floor(duration % 60);
         isTrackTimeTotal.value = minutes+':'+seconds.toString().padStart(2, '0')
     });
+}
+
+watch(() => audio.value, () => {
+    timeupdate()
+    loadmetadata()
 })
 
 watch(() => isTrackTimeCurrent.value, (time) => {
