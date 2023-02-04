@@ -20,10 +20,14 @@ let seeker = ref(null)
 let seekerContainer = ref(null)
 let range = ref(0)
 
-timeupdate()
-loadmetadata()
-
 onMounted(() => {
+
+    if (audio.value) {
+        setTimeout(() => {
+            timeupdate()
+            loadmetadata()
+        }, 300)
+    }
 
     if (currentTrack.value) { 
         seeker.value.addEventListener("change", function () {
