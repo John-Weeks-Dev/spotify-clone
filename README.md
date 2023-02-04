@@ -1,29 +1,31 @@
-# spotify-c
+# Spotify Clone (spotify-clone)
 
-This template should help get you started developing with Vue 3 in Vite.
+### Tutorial series on how to build this
 
-## Recommended IDE Setup
+If you'd like a step by step guide on how to build this just **CLICK THE IMAGE BELOW**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[![GO TO JOHN WEEKS DEV TUTORIAL VIDEOS](https://user-images.githubusercontent.com/108229029/214010140-f6953878-5f55-4a6a-b2c8-b64014b16db5.png)](https://www.youtube.com/watch?v=o-hIuejQzAA)
 
-## Customize configuration
+Come and check out my YOUTUBE channel for lots more tutorials -> https://www.youtube.com/@johnweeksdev
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+**LIKE**, **SUBSCRIBE**, and **SMASH THE NOTIFICATION BELL**!!!
 
-## Project Setup
+## App Setup
 
-```sh
-npm install
 ```
+git clone https://github.com/John-Weeks-Dev/spotify-clone.git
 
-### Compile and Hot-Reload for Development
+npm i
 
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+You should be good to go! ROCK THE F**K OUT!!!
 
-```sh
-npm run build
-```
+# Application Images
+
+<img width="1439" alt="Screenshot 2023-02-04 at 12 33 25" src="https://user-images.githubusercontent.com/108229029/216750826-56af149d-648b-43a7-ac85-a0ebdf700645.png">
+<img width="1439" alt="Screenshot 2023-02-04 at 12 37 25" src="https://user-images.githubusercontent.com/108229029/216750833-6581e270-4189-4132-a604-090458c143cf.png">
+<img width="1440" alt="Screenshot 2023-02-04 at 12 41 31" src="https://user-images.githubusercontent.com/108229029/216751013-8b2ac380-e068-448d-80d4-21b5b59647ea.png">
+<img width="1440" alt="Screenshot 2023-02-04 at 12 36 20" src="https://user-images.githubusercontent.com/108229029/216750956-5a1164c3-1a44-4afe-abc2-5ffdb633a241.png">
+
