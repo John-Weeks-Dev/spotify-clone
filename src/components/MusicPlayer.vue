@@ -21,6 +21,9 @@ let seekerContainer = ref(null)
 let range = ref(0)
 
 onMounted(() => {
+    timeupdate()
+    loadmetadata()
+
     if (currentTrack.value) { 
         seeker.value.addEventListener("change", function () {
             const time = audio.value.duration * (seeker.value.value / 100);
@@ -43,9 +46,6 @@ onMounted(() => {
             audio.value.currentTime = time;
             seeker.value.value = (100 / audio.value.duration) * audio.value.currentTime;
         });
-    
-        timeupdate()
-        loadmetadata()
     }
 })
 
