@@ -21,7 +21,7 @@ let seekerContainer = ref(null)
 let range = ref(0)
 
 timeupdate()
-    loadmetadata()
+loadmetadata()
 
 onMounted(() => {
 
