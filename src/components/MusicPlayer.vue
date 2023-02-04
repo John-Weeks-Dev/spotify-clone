@@ -79,6 +79,7 @@ watch(() => isTrackTimeCurrent.value, (time) => {
         useSong.nextSong(currentTrack.value)
     }
 })
+
 </script>
 
 <template>
