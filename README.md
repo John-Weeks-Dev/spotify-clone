@@ -1,6 +1,6 @@
 # Spotify Clone (spotify-clone)
 
-### Tutorial series on how to build this
+### Learn how to build this!
 
 If you'd like a step by step guide on how to build this just **CLICK THE IMAGE BELOW**
 
